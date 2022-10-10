@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657541644-z7jyjZWd" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "รีบดูก่อนลบ‼️",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://cdn.discordapp.com/attachments/1027150542939639870/1029046960793059408/ezgif.com-gif-maker_11.png",
+            "size": "full",
+            "animated": true
+          }
+        ],
+        "margin": "md",
+        "borderWidth": "bold"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "❤︎  เว็บเด็ด เว็บดัง ไม่ต้องรอคิว ❤︎",
+            "color": "#9933CC",
+            "weight": "bold",
+            "margin": "md",
+            "align": "center"
+          },
+          {
+            "type": "text",
+            "text": "กดที่ปุ่มรับเครดิตฟรีได้เลย",
+            "color": "#9933CC",
+            "align": "center",
+            "size": "sm",
+            "margin": "sm",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "!! สมัครสมาชิกใหม่ รับ 150%",
+            "color": "#FF0000",
+            "align": "center",
+            "size": "sm",
+            "margin": "md"
+          }
+        ],
+        "backgroundColor": "#E6E6FA",
+        "margin": "md",
+        "cornerRadius": "md"
+      }
+    ],
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#CC99FF",
+      "endColor": "#6495ED",
+      "centerColor": "#FFF0F5"
+    }
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "กดรับเครดิตฟรี 50 เครดิต",
+            "weight": "bold",
+            "color": "#ffffff",
+            "align": "center",
+            "offsetTop": "none"
+          }
+        ],
+        "backgroundColor": "#339933",
+        "cornerRadius": "sm",
+        "paddingAll": "md",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://lin.ee/sUcuJunW"
+        }
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "กดสมัครสมาชิกใหม่",
+            "color": "#ffffff",
+            "weight": "bold",
+            "align": "center"
+          }
+        ],
+        "paddingAll": "md",
+        "backgroundColor": "#df0c41",
+        "margin": "md",
+        "cornerRadius": "sm",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "http://www.autopg777.com/"
+        }
+      }
+    ],
+    "backgroundColor": "#CC99FF",
+    "paddingAll": "xxl"
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
